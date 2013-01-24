@@ -1,0 +1,12 @@
+- @super_entities.each do |super_entity|
+  %h1= super_entity.name
+  %h3 Element
+  = super_entity.element
+  %h3{:style=>"color:#{super_entity.color}"}
+    = super_entity.color
+  %h3 Life Points
+  = super_entity.life_points
+  %h3 Health Points
+  = super_entity.health_points
+  %h3 Hunger Points
+  = super_entity.hunger_points

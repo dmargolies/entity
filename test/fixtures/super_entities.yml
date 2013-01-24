@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  color: MyString
+  element: MyString
+  life_points: 1
+  health_points: 1
+  hunger_points: 1
+
+two:
+  name: MyString
+  color: MyString
+  element: MyString
+  life_points: 1
+  health_points: 1
+  hunger_points: 1
