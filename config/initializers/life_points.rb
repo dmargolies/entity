@@ -1,0 +1,2 @@
+LifePointsUpdater.perform_async()
+
