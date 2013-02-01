@@ -23,6 +23,8 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'sidekiq'
+gem 'whenever', :require => false
+
 
 group :development do
   gem 'pry-rails'
