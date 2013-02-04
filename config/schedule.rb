@@ -8,6 +8,7 @@
 set :output, "./log/cron_log.log"
 #
 # remember to run 'whenever --update-crontab --set environment=development'
+# stop cron when done whenever -c [theCronJob]
 case @environment
 when 'development'
     every 1.minutes do

@@ -11,17 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130124022131) do
+ActiveRecord::Schema.define(:version => 20130204040641) do
 
   create_table "super_entities", :force => true do |t|
     t.string   "name"
     t.string   "color"
     t.string   "element"
-    t.integer  "life_points",   :default => 10
-    t.integer  "health_points", :default => 100
-    t.integer  "hunger_points", :default => 5
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
+    t.integer  "life_points",       :default => 10
+    t.integer  "health_points",     :default => 100
+    t.integer  "hunger_points",     :default => 5
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.datetime "points_updated_at"
   end
 
 end
