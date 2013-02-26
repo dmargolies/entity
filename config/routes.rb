@@ -3,4 +3,5 @@ Entity::Application.routes.draw do
 
   resources :super_entities
 
+
 end

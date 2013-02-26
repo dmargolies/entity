@@ -5,7 +5,7 @@ class SuperEntitiesController < ApplicationController
     @super_entities = SuperEntity.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      #format.html # index.html.erb
       format.json { render json: @super_entities }
     end
   end
@@ -16,7 +16,7 @@ class SuperEntitiesController < ApplicationController
     @super_entity = SuperEntity.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      #format.html # show.html.erb
       format.json { render json: @super_entity }
     end
   end
@@ -27,7 +27,7 @@ class SuperEntitiesController < ApplicationController
     @super_entity = SuperEntity.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      #format.html # new.html.erb
       format.json { render json: @super_entity }
     end
   end
@@ -44,10 +44,10 @@ class SuperEntitiesController < ApplicationController
 
     respond_to do |format|
       if @super_entity.save
-        format.html { redirect_to @super_entity, notice: 'Super entity was successfully created.' }
+        #format.html { redirect_to @super_entity, notice: 'Super entity was successfully created.' }
         format.json { render json: @super_entity, status: :created, location: @super_entity }
       else
-        format.html { render action: "new" }
+        #format.html { render action: "new" }
         format.json { render json: @super_entity.errors, status: :unprocessable_entity }
       end
     end
@@ -60,10 +60,10 @@ class SuperEntitiesController < ApplicationController
 
     respond_to do |format|
       if @super_entity.update_attributes(params[:super_entity])
-        format.html { redirect_to @super_entity, notice: 'Super entity was successfully updated.' }
+        #format.html { redirect_to @super_entity, notice: 'Super entity was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        #format.html { render action: "edit" }
         format.json { render json: @super_entity.errors, status: :unprocessable_entity }
       end
     end
@@ -76,7 +76,7 @@ class SuperEntitiesController < ApplicationController
     @super_entity.destroy
 
     respond_to do |format|
-      format.html { redirect_to super_entities_url }
+      #format.html { redirect_to super_entities_url }
       format.json { head :no_content }
     end
   end

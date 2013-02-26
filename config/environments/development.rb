@@ -34,4 +34,8 @@ Entity::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #sprockets for ember
+  config.ember.variant = :development
+
 end
