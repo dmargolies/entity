@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<ul>
+{{#each entity in controller}}
+<li>{{#linkTo "super_entity" entity}}{{entity.name}}{{/linkTo}}</li>
+{{/each}}
+</ul>
+
+{{outlet}}
